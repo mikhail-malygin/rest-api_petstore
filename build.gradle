@@ -15,7 +15,8 @@ def allureVersion = "2.18.1",
     slf4jVersion = "1.7.32",
     ownerVersion = "1.0.12",
     fakerVersion = "1.0.2",
-    assertjVersion = "3.23.1"
+    assertjVersion = "3.23.1",
+    jacksonVersion = "2.13.4"
 
 allure {
     report {
@@ -41,7 +42,8 @@ dependencies {
             "io.qameta.allure:allure-rest-assured:$allureVersion",
             "org.aeonbits.owner:owner:$ownerVersion",
             "com.github.javafaker:javafaker:$fakerVersion",
-            "org.assertj:assertj-core:$assertjVersion"
+            "org.assertj:assertj-core:$assertjVersion",
+            "com.fasterxml.jackson.core:jackson-core:$jacksonVersion"
     )
     testRuntimeOnly('org.junit.jupiter:junit-jupiter-engine:5.8.1')
 }
